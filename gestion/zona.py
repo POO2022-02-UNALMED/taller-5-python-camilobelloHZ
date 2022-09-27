@@ -3,7 +3,7 @@ class Zona:
     def __init__(self, nombre, zoo= None):
         self.__nombre= nombre
         self.__zoo= zoo
-        self.__animales= []
+        self.__animales= list()
 
    #metodos set 
     def setNombre(self,nombre):
