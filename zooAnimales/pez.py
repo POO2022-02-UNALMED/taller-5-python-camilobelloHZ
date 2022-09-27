@@ -1,9 +1,9 @@
 from zooAnimales.animal import Animal
 
 class Pez(Animal):
-    bacalaos=0
     salmones=0
-    __listado=[]
+    bacalaos=0
+    __listado= list()
     def __init__(self, nombre, edad, habitat, genero, colorEscamas, cantidadAletas):
         super().__init__(nombre, edad, habitat, genero)
         self.__colorEscamas=colorEscamas
@@ -47,7 +47,8 @@ class Pez(Animal):
         return len(cls.__listado)
     
     def movimientp(self):
-        return "nadar"
+        x= "nadar"
+        return x
     
     @classmethod
     def crearBacalao(cls, nombre, edad, genero):

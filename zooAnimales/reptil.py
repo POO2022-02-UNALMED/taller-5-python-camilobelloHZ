@@ -1,9 +1,9 @@
 from zooAnimales.animal import Animal
 
 class Reptil(Animal):
-    serpientes=0
     iguanas=0
-    __listado=[]
+    serpientes=0
+    __listado=list()
     def __init__(self, nombre, edad, habitat, genero, colorEscamas, largoCola):
         super().__init__(nombre, edad, habitat, genero)
         self.__colorEscamas=colorEscamas
@@ -37,7 +37,8 @@ class Reptil(Animal):
     #metodos de la clase 
 
     def movimiento(self):
-        return "reptar"
+        x = "reptar"
+        return x
     
     @classmethod
     def cantidadReptiles(cls):

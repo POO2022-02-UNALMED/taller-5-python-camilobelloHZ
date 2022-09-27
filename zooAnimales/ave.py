@@ -1,9 +1,9 @@
 from zooAnimales.animal import Animal
 
 class Ave(Animal):
-    halcones=0
     aguilas=0
-    __listado=[]
+    halcones=0
+    __listado=list()
     def __init__(self, nombre, edad, habitat, genero, colorPlumas):
         super().__init__(nombre, edad, habitat, genero)
         self.__colorPlumas=colorPlumas
@@ -26,7 +26,8 @@ class Ave(Animal):
 #metodos de la clase
 
     def movimmiento(self):
-        return "volar"
+        x= "volar"
+        return x
 
     @classmethod
     def crearHalcon(cls, nombre, edad, genero):

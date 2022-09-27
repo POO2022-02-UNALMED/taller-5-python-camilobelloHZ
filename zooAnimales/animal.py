@@ -7,7 +7,7 @@ class Animal:
         self.__edad=edad
         self.__habitat=habitat
         self.__genero=genero
-        self.__zona=[]
+        self.__zona=list()
         
 #metodos get
 
@@ -50,16 +50,17 @@ class Animal:
 #metodos de la clase 
 
     def movimiento(self):
-        return "desplazarse"
+        x= "desplazarse"
+        return x
 
 
     def toString(self):
         if self.__zona:
-            imprimir= "Mi nombre es "+self.__nombre+", tengo una edad de "+str(self.__edad)+", habito en "+self.__habitat+" y mi genero es "+self.__genero+", la zona en la que me ubico es: "+self.__zona.getNombre()
+            y= "Mi nombre es "+self.__nombre+", tengo una edad de "+str(self.__edad)+", habito en "+self.__habitat+" y mi genero es "+self.__genero+", la zona en la que me ubico es: "+self.__zona.getNombre()
             
         else: 
-            imprimir="Mi nombre es "+self.__nombre+", tengo una edad de "+str(self.__edad)+", habito en "+self.__habitat+" y mi genero es "+self.__genero
-        return imprimir 
+            y="Mi nombre es "+self.__nombre+", tengo una edad de "+str(self.__edad)+", habito en "+self.__habitat+" y mi genero es "+self.__genero
+        return y
 
     @classmethod
     def totalPorTipo(cls):

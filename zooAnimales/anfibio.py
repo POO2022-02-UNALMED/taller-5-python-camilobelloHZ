@@ -1,9 +1,9 @@
 from zooAnimales.animal import  Animal
 
 class Anfibio(Animal):
-    ranas=0
     salamandras=0
-    __listado=[]
+    ranas=0
+    __listado=list()
     def __init__(self, nombre, edad, habitat, genero, colorPiel, venenoso):
         super().__init__(nombre, edad, habitat, genero)
         self.__colorPiel=colorPiel
@@ -48,7 +48,8 @@ class Anfibio(Animal):
         return len(cls.__listado)
 
     def movimiento(self):
-        return "saltar"
+        x= "saltar"
+        return x
 
     @classmethod
     def crearSalamandra(cls, nombre, edad, genero):
