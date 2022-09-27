@@ -40,5 +40,5 @@ class Zoologico:
             total += self.__zonas[e].cantidadAnimales()
             e += 1
         return total
-#hyjo
+#camilo bello 
 
