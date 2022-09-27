@@ -1,5 +1,8 @@
+
+
+
 class Zoologico:
-    __zonas=[]
+    __zonas= list()
     def __init__(self, nombre, ubicacion):
         self.__nombre= nombre 
         self.__ubicacion= ubicacion
@@ -31,11 +34,11 @@ class Zoologico:
         self.__zonas.append(zonas)
 
     def cantidadTotalAnimales(self):
-        suma = 0
-        i = 0
-        while i < len(self.__zonas):
-            suma += self.__zonas[i].cantidadAnimales()
-            i += 1
-        return suma
+        total = 0
+        e = 0
+        while e < len(self.__zonas):
+            total += self.__zonas[e].cantidadAnimales()
+            e += 1
+        return total
 #hyjo
 
