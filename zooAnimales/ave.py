@@ -46,4 +46,3 @@ class Ave(Animal):
         cls.aguilas +=1
         return aguila
 
-        
