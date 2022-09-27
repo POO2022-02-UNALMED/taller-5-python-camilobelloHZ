@@ -38,4 +38,5 @@ class Zoologico:
             total += self.__zonas[e].cantidadAnimales()
         return total
 
+#hyjo
 
