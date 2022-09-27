@@ -31,12 +31,11 @@ class Zoologico:
         self.__zonas.append(zonas)
 
     def cantidadTotalAnimales(self):
-        e= 0
-        total= 0
-        while e< len(self.__zonas):
-            e +=1
-            total += self.__zonas[e].cantidadAnimales()
-        return total
-
+        suma = 0
+        i = 0
+        while i < len(self.__zonas):
+            suma += self.__zonas[i].cantidadAnimales()
+            i += 1
+        return suma
 #hyjo
 
